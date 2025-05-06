@@ -25,10 +25,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR"> {/* Changed lang to pt-BR */}
+    // Apply font variable and antialiasing directly to the html tag
+    // Ensure no leading/trailing whitespace around the body tag
+    <html lang="pt-BR" className={cn(outfit.variable, "antialiased")}>
       <body className={cn(
-        "min-h-screen bg-background font-outfit-light antialiased flex flex-col", // Use light weight by default, ensure flex column layout
-        outfit.variable // Apply font variable
+        "min-h-screen bg-background text-foreground flex flex-col" // font-outfit-light is applied globally in globals.css
       )}>
         <Header />
         <main className="flex-grow">{children}</main> {/* Ensure main content takes up space */}
