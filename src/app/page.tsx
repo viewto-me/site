@@ -1,9 +1,10 @@
 import DynamicTaglines from '@/components/home/dynamic-taglines';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { ArrowRight, CheckCircle, BarChart, BrainCircuit, ShieldCheck, Zap, Users } from 'lucide-react';
+import { ArrowRight, Info, BarChart, BrainCircuit, ShieldCheck, Zap } from 'lucide-react';
 import Link from 'next/link';
 import TextAnalysisForm from '@/components/ai/text-analysis-form';
+import Image from 'next/image';
 
 const benefits = [
   {
@@ -46,7 +47,7 @@ export default function Home() {
         {/* Hero Section */}
         <section className="relative py-24 md:py-32 lg:py-40 bg-black text-white text-center overflow-hidden">
            <div className="absolute inset-0 bg-gradient-to-b from-black via-gray-900 to-black opacity-80 z-0"></div>
-           <div className="container relative z-10 px-4 md:px-6">
+           <div className="container mx-auto relative z-10 px-4 md:px-6">
             <DynamicTaglines />
             <p className="mt-6 max-w-2xl mx-auto text-lg md:text-xl font-outfit-light text-gray-300">
               Analisamos e categorizamos conversas desestruturadas, transformando interações humanas e diálogos de IA em KPIs estratégicos. Descubra insights profundos e tome decisões mais inteligentes.
@@ -55,7 +56,7 @@ export default function Home() {
               <Button size="lg" asChild className="bg-primary hover:bg-primary/90 text-primary-foreground font-outfit-regular">
                 <Link href="/produtos">Explorar Soluções <ArrowRight className="ml-2 h-5 w-5" /></Link>
               </Button>
-              <Button size="lg" variant="outline" asChild className="border-primary text-primary hover:bg-primary/10 hover:text-primary font-outfit-regular">
+              <Button size="lg" variant="outline" asChild className="border-white text-white hover:bg-white/10 hover:text-white font-outfit-regular">
                 <Link href="/contato">Fale Conosco</Link>
               </Button>
             </div>
@@ -63,9 +64,9 @@ export default function Home() {
         </section>
 
          {/* AI Analyzer Section */}
-        <section className="py-16 md:py-24 bg-background">
-          <div className="container px-4 md:px-6">
-            <h2 className="text-3xl md:text-4xl font-outfit-semibold text-center mb-4">Experimente Nossa IA</h2>
+        <section className="py-16 md:py-24 bg-background text-foreground">
+          <div className="container mx-auto px-4 md:px-6">
+            <h2 className="text-3xl md:text-4xl font-outfit-regular text-center mb-4">Experimente Nossa IA</h2>
             <p className="text-center text-muted-foreground mb-12 max-w-xl mx-auto">
               Cole um texto abaixo e veja como nossa IA extrai sentimento, satisfação e os problemas principais em segundos.
             </p>
@@ -75,32 +76,27 @@ export default function Home() {
 
 
         {/* Problem/Solution Section */}
-        <section className="py-16 md:py-24 bg-secondary">
-          <div className="container px-4 md:px-6">
+        <section className="py-16 md:py-24 bg-secondary text-secondary-foreground">
+          <div className="container mx-auto px-4 md:px-6">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-3xl md:text-4xl font-outfit-semibold mb-4">O Desafio dos Dados Não Estruturados</h2>
+                <h2 className="text-3xl md:text-4xl font-outfit-regular mb-4">O Desafio dos Dados Não Estruturados</h2>
                 <p className="text-lg text-muted-foreground mb-6">
                   Empresas geram volumes massivos de texto em chats, e-mails, pesquisas e documentos. Analisar manualmente esses dados é lento, caro e sujeito a vieses, escondendo insights valiosos.
                 </p>
-                 <h3 className="text-xl font-outfit-medium mb-3">Fontes Comuns de Dados:</h3>
+                 <h3 className="text-xl font-outfit-regular mb-3">Fontes Comuns de Dados:</h3>
                  <ul className="space-y-2">
                     {dataSources.map((source) => (
                        <li key={source.name} className="flex items-center text-muted-foreground">
-                        <CheckCircle className="h-5 w-5 mr-2 text-primary" />
+                        <Info className="h-5 w-5 mr-2 text-muted-foreground" />
                         {source.name}
                       </li>
                     ))}
                  </ul>
               </div>
               <div>
-                {/* Placeholder for visual representation */}
-                <div className="bg-background rounded-lg shadow-lg p-8 aspect-video flex items-center justify-center">
-                  {/* Replace with an actual graphic/animation */}
-                  <p className="text-muted-foreground text-center">
-                    [Gráfico Abstrato: Caos (linhas/pontos aleatórios) -> Ordem (linhas/pontos organizados/insights)]
-                  </p>
-                  <img src="https://picsum.photos/600/338" alt="Data transformation visual" className="rounded-lg object-cover hidden" data-ai-hint="data transformation abstract"/>
+                <div className="bg-background rounded-lg shadow-lg p-8 aspect-video flex items-center justify-center border border-border">
+                  <Image src="https://picsum.photos/600/338" alt="Data transformation visual" width={600} height={338} className="rounded-lg object-cover" data-ai-hint="data transformation abstract"/>
                 </div>
               </div>
             </div>
@@ -108,17 +104,17 @@ export default function Home() {
         </section>
 
         {/* Key Benefits Section */}
-        <section className="py-16 md:py-24 bg-background">
-          <div className="container px-4 md:px-6">
-            <h2 className="text-3xl md:text-4xl font-outfit-semibold text-center mb-12">Benefícios que Vão Além do Óbvio</h2>
+        <section className="py-16 md:py-24 bg-background text-foreground">
+          <div className="container mx-auto px-4 md:px-6">
+            <h2 className="text-3xl md:text-4xl font-outfit-regular text-center mb-12">Benefícios que Vão Além do Óbvio</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
               {benefits.map((benefit) => (
-                <Card key={benefit.title} className="text-center bg-card border border-border/60 shadow-sm hover:shadow-md transition-shadow duration-300">
+                <Card key={benefit.title} className="text-center bg-card border border-border shadow-sm hover:shadow-md transition-shadow duration-300">
                   <CardHeader>
-                    <div className="mx-auto bg-primary/10 p-3 rounded-full w-fit mb-4">
-                      <benefit.icon className="h-8 w-8 text-primary" />
+                    <div className="mx-auto bg-muted p-3 rounded-full w-fit mb-4">
+                      <benefit.icon className="h-8 w-8 text-muted-foreground" />
                     </div>
-                    <CardTitle className="font-outfit-medium text-xl">{benefit.title}</CardTitle>
+                    <CardTitle className="text-xl card-title">{benefit.title}</CardTitle>
                   </CardHeader>
                   <CardContent>
                     <p className="text-muted-foreground">{benefit.description}</p>
@@ -130,9 +126,9 @@ export default function Home() {
         </section>
 
         {/* CTA Section */}
-        <section className="py-16 md:py-24 bg-secondary">
-          <div className="container text-center px-4 md:px-6">
-            <h2 className="text-3xl md:text-4xl font-outfit-semibold mb-6">Pronto para Descobrir o que seus Dados Escondem?</h2>
+        <section className="py-16 md:py-24 bg-secondary text-secondary-foreground">
+          <div className="container mx-auto text-center px-4 md:px-6">
+            <h2 className="text-3xl md:text-4xl font-outfit-regular mb-6">Pronto para Descobrir o que seus Dados Escondem?</h2>
             <p className="text-lg text-muted-foreground mb-8 max-w-xl mx-auto">
               Comece a transformar suas interações em inteligência estratégica hoje mesmo.
             </p>
