@@ -18,11 +18,11 @@ export default function Header() {
       <div className="container flex h-14 max-w-screen-2xl items-center px-4 md:px-6 lg:px-8">
         <Link href="/" className="mr-6 flex items-center space-x-2">
           <Image
-            src="https://storage.googleapis.com/publics-svg/viewtome-name28px.svg"
+            src="https://storage.googleapis.com/publics-svg/viewtome-name18px.svg"
             alt="viewto.me logo"
-            width={140} // Adjusted width, assuming an aspect ratio for "viewto.me name"
-            height={28}
-            priority // Add priority for LCP element
+            width={90} 
+            height={18}
+            priority 
           />
         </Link>
         <nav className="hidden flex-1 items-center space-x-6 text-sm font-outfit-regular md:flex">
@@ -52,10 +52,10 @@ export default function Header() {
               <div className="flex flex-col h-full py-6">
                  <Link href="/" className="mb-6 flex items-center space-x-2 px-4">
                     <Image
-                        src="https://storage.googleapis.com/publics-svg/viewtome-name28px.svg"
+                        src="https://storage.googleapis.com/publics-svg/viewtome-name18px.svg"
                         alt="viewto.me logo"
-                        width={140}
-                        height={28}
+                        width={90}
+                        height={18}
                     />
                  </Link>
                 <nav className="flex flex-col space-y-4 px-4">
@@ -82,3 +82,4 @@ export default function Header() {
     </header>
   );
 }
+
