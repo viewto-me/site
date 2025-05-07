@@ -14,8 +14,8 @@ const navItems = [
 
 export default function Header() {
   return (
-    <header className="w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-14 max-w-screen-2xl items-center px-4 md:px-6 lg:px-8">
+    <header className="w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 sticky top-0 z-50">
+      <div className="w-full flex h-14 items-center px-4 md:px-6 lg:px-8">
         <Link href="/" className="mr-6 flex items-center space-x-2">
           <Image
             src="https://storage.googleapis.com/publics-svg/viewtome-name18px.svg"
@@ -23,7 +23,7 @@ export default function Header() {
             width={90}
             height={18}
             priority
-            className="relative -top-px" // Adjusted from -top-0.5
+            className="relative -top-px" 
           />
         </Link>
         <nav className="hidden flex-1 items-center space-x-6 text-sm font-outfit-regular md:flex">
@@ -49,7 +49,7 @@ export default function Header() {
                 <span className="sr-only">Abrir menu</span>
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-[240px] sm:w-[300px] bg-background">
+            <SheetContent side="right" className="w-[240px] sm:w-[300px] bg-background text-foreground">
               <div className="flex flex-col h-full py-6">
                  <Link href="/" className="mb-6 flex items-center space-x-2 px-4">
                     <Image
@@ -57,7 +57,7 @@ export default function Header() {
                         alt="viewto.me logo"
                         width={90}
                         height={18}
-                        className="relative -top-px" // Adjusted from -top-0.5
+                        className="relative -top-px"
                     />
                  </Link>
                 <nav className="flex flex-col space-y-4 px-4">
