@@ -23,7 +23,7 @@ export default function Header() {
             width={90}
             height={18}
             priority
-            className="relative -top-1"
+            className="relative -top-0.5" // Adjusted from -top-1 to -top-0.5
           />
         </Link>
         <nav className="hidden flex-1 items-center space-x-6 text-sm font-outfit-regular md:flex">
@@ -57,7 +57,7 @@ export default function Header() {
                         alt="viewto.me logo"
                         width={90}
                         height={18}
-                        className="relative -top-1"
+                        className="relative -top-0.5" // Adjusted from -top-1 to -top-0.5
                     />
                  </Link>
                 <nav className="flex flex-col space-y-4 px-4">
