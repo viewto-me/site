@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
+import Image from 'next/image';
 
 const navItems = [
   { label: 'Home', href: '/' },
@@ -16,8 +17,13 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-14 max-w-screen-2xl items-center px-4 md:px-6 lg:px-8">
         <Link href="/" className="mr-6 flex items-center space-x-2">
-          {/* Placeholder for logo - Replace with actual SVG or Image */}
-          <span className="font-outfit-semibold text-lg text-foreground">viewto.me</span>
+          <Image
+            src="https://storage.googleapis.com/publics-svg/viewtome-name28px.svg"
+            alt="viewto.me logo"
+            width={140} // Adjusted width, assuming an aspect ratio for "viewto.me name"
+            height={28}
+            priority // Add priority for LCP element
+          />
         </Link>
         <nav className="hidden flex-1 items-center space-x-6 text-sm font-outfit-regular md:flex">
           {navItems.map((item) => (
@@ -31,7 +37,7 @@ export default function Header() {
           ))}
         </nav>
         <div className="flex flex-1 items-center justify-end space-x-4">
-           <Button asChild variant="default" className="hidden md:inline-flex bg-primary hover:bg-primary/90 text-primary-foreground">
+           <Button asChild variant="default" className="hidden md:inline-flex bg-primary hover:bg-primary/90 text-primary-foreground font-outfit-regular">
              <Link href="/contato">Fale Conosco</Link>
            </Button>
            {/* Mobile Menu */}
@@ -45,7 +51,12 @@ export default function Header() {
             <SheetContent side="right" className="w-[240px] sm:w-[300px] bg-background">
               <div className="flex flex-col h-full py-6">
                  <Link href="/" className="mb-6 flex items-center space-x-2 px-4">
-                   <span className="font-outfit-semibold text-lg text-foreground">viewto.me</span>
+                    <Image
+                        src="https://storage.googleapis.com/publics-svg/viewtome-name28px.svg"
+                        alt="viewto.me logo"
+                        width={140}
+                        height={28}
+                    />
                  </Link>
                 <nav className="flex flex-col space-y-4 px-4">
                   {navItems.map((item) => (
@@ -59,7 +70,7 @@ export default function Header() {
                   ))}
                 </nav>
                 <div className="mt-auto px-4">
-                   <Button asChild variant="default" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
+                   <Button asChild variant="default" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-outfit-regular">
                      <Link href="/contato">Fale Conosco</Link>
                    </Button>
                 </div>
