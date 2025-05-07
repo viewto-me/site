@@ -52,7 +52,6 @@ export default function ContatoPage() {
                 <ul className="list-disc list-inside text-muted-foreground space-y-1">
                     <li>Para vendas e parcerias: <a href="mailto:sales@viewto.me" className="text-primary hover:underline">sales@viewto.me</a></li>
                     <li>Para suporte técnico: <a href="mailto:support@viewto.me" className="text-primary hover:underline">support@viewto.me</a></li>
-                    <li>Para imprensa: <a href="mailto:press@viewto.me" className="text-primary hover:underline">press@viewto.me</a></li>
                 </ul>
              </div>
           </div>

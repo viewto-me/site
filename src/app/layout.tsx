@@ -14,7 +14,7 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: 'Viewto Insights - Além do Óbvio',
+  title: 'viewto.me',
   description: 'Análise e extração de dados de textos desestruturados com IA. Insights Além do Óbvio para empresas customer-centric.',
   icons: {
     icon: 'https://storage.googleapis.com/publics-svg/favicon32px.svg',

@@ -1,4 +1,4 @@
-# **App Name**: Viewto Insights
+# **App Name**: viewto.me
 
 ## Core Features:
 

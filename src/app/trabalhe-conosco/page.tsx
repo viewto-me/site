@@ -38,7 +38,7 @@ export default function TrabalheConoscoPage() {
         </p>
 
         <Button size="lg" asChild className="bg-primary hover:bg-primary/90 text-primary-foreground font-outfit-regular">
-          <a href="mailto:careers@viewto.me?subject=Aplicação Espontânea">Enviar Currículo</a>
+          <a href="mailto:careers@viewto.me?subject=Aplicação pelo site">Enviar Currículo</a>
         </Button>
 
          <p className="mt-8 text-sm text-muted-foreground">Ou <Link href="/contato" className="text-primary hover:underline">entre em contato</Link> para saber mais.</p>
