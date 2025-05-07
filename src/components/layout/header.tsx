@@ -20,9 +20,10 @@ export default function Header() {
           <Image
             src="https://storage.googleapis.com/publics-svg/viewtome-name18px.svg"
             alt="viewto.me logo"
-            width={90} 
+            width={90}
             height={18}
-            priority 
+            priority
+            className="relative -top-1"
           />
         </Link>
         <nav className="hidden flex-1 items-center space-x-6 text-sm font-outfit-regular md:flex">
@@ -56,6 +57,7 @@ export default function Header() {
                         alt="viewto.me logo"
                         width={90}
                         height={18}
+                        className="relative -top-1"
                     />
                  </Link>
                 <nav className="flex flex-col space-y-4 px-4">
@@ -82,4 +84,3 @@ export default function Header() {
     </header>
   );
 }
-
