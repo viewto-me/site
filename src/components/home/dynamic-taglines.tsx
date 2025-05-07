@@ -32,7 +32,7 @@ const DynamicTaglines = () => {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
           transition={{ duration: 0.5 }}
-          className="text-4xl md:text-5xl lg:text-6xl font-outfit-semibold tracking-tight text-primary" // Use Teal color
+          className="text-4xl md:text-5xl lg:text-6xl font-outfit-regular tracking-tight text-primary"
         >
           {taglines[index]}
         </motion.h1>
