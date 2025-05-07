@@ -1,3 +1,4 @@
+
 import DynamicTaglines from '@/components/home/dynamic-taglines';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -56,7 +57,7 @@ export default function Home() {
               <Button size="lg" asChild className="bg-primary hover:bg-primary/90 text-primary-foreground font-outfit-regular">
                 <Link href="/produtos">Explorar Soluções <ArrowRight className="ml-2 h-5 w-5" /></Link>
               </Button>
-              <Button size="lg" variant="outline" asChild className="border-white text-white hover:bg-white/10 hover:text-white font-outfit-regular">
+              <Button size="lg" variant="outline" asChild className="border-primary text-primary hover:bg-primary/10 hover:text-primary font-outfit-regular">
                 <Link href="/contato">Fale Conosco</Link>
               </Button>
             </div>
@@ -67,7 +68,7 @@ export default function Home() {
         <section className="py-16 md:py-24 bg-background text-foreground">
           <div className="container mx-auto px-4 md:px-6">
             <h2 className="text-3xl md:text-4xl font-outfit-regular text-center mb-4">Experimente Nossa IA</h2>
-            <p className="text-center text-muted-foreground mb-12 max-w-xl mx-auto">
+            <p className="text-center text-muted-foreground mb-12 max-w-xl mx-auto font-outfit-light">
               Cole um texto abaixo e veja como nossa IA extrai sentimento, satisfação e os problemas principais em segundos.
             </p>
             <TextAnalysisForm />
@@ -81,11 +82,11 @@ export default function Home() {
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
                 <h2 className="text-3xl md:text-4xl font-outfit-regular mb-4">O Desafio dos Dados Não Estruturados</h2>
-                <p className="text-lg text-muted-foreground mb-6">
+                <p className="text-lg text-muted-foreground mb-6 font-outfit-light">
                   Empresas geram volumes massivos de texto em chats, e-mails, pesquisas e documentos. Analisar manualmente esses dados é lento, caro e sujeito a vieses, escondendo insights valiosos.
                 </p>
                  <h3 className="text-xl font-outfit-regular mb-3">Fontes Comuns de Dados:</h3>
-                 <ul className="space-y-2">
+                 <ul className="space-y-2 font-outfit-light">
                     {dataSources.map((source) => (
                        <li key={source.name} className="flex items-center text-muted-foreground">
                         <Info className="h-5 w-5 mr-2 text-muted-foreground" />
@@ -96,7 +97,7 @@ export default function Home() {
               </div>
               <div>
                 <div className="bg-background rounded-lg shadow-lg p-8 aspect-video flex items-center justify-center border border-border">
-                  <Image src="https://picsum.photos/600/338" alt="Data transformation visual" width={600} height={338} className="rounded-lg object-cover" data-ai-hint="data transformation abstract"/>
+                  <Image src="https://picsum.photos/600/338" alt="Data transformation visual" width={600} height={338} className="rounded-lg object-cover" data-ai-hint="data analysis abstract"/>
                 </div>
               </div>
             </div>
@@ -114,10 +115,10 @@ export default function Home() {
                     <div className="mx-auto bg-muted p-3 rounded-full w-fit mb-4">
                       <benefit.icon className="h-8 w-8 text-muted-foreground" />
                     </div>
-                    <CardTitle className="text-xl card-title">{benefit.title}</CardTitle>
+                    <CardTitle className="text-xl font-outfit-regular">{benefit.title}</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-muted-foreground">{benefit.description}</p>
+                    <p className="text-muted-foreground font-outfit-light">{benefit.description}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -129,7 +130,7 @@ export default function Home() {
         <section className="py-16 md:py-24 bg-secondary text-secondary-foreground">
           <div className="container mx-auto text-center px-4 md:px-6">
             <h2 className="text-3xl md:text-4xl font-outfit-regular mb-6">Pronto para Descobrir o que seus Dados Escondem?</h2>
-            <p className="text-lg text-muted-foreground mb-8 max-w-xl mx-auto">
+            <p className="text-lg text-muted-foreground mb-8 max-w-xl mx-auto font-outfit-light">
               Comece a transformar suas interações em inteligência estratégica hoje mesmo.
             </p>
             <Button size="lg" asChild className="bg-primary hover:bg-primary/90 text-primary-foreground font-outfit-regular">
