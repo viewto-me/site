@@ -15,14 +15,14 @@ const products = [
   {
     icon: FileText,
     title: 'Extrator',
-    description: 'Extrai dados específicos de documentos diversos (RG, CNH, Contratos, NFs, Boletos, CVs, etc.), suportando texto, imagem e PDF.',
+    description: 'Extrai dados específicos de uma ampla variedade de documentos (RG, CNH, contratos, NFs, boletos, CVs, entre outros), incluindo documentos não identificados. Suporte para arquivos em texto, imagem e PDF.',
     apis: ['API Docs'],
     value: 'Automatize a coleta de informações de documentos de forma rápida e precisa.',
     link: '/contato?produto=extrator',
   },
   {
     icon: Settings,
-    title: 'Soluções Customizadas',
+    title: 'Customizar',
     description: 'Desenvolvimento de APIs sob medida para suas necessidades específicas de análise ou extração de dados.',
     apis: ['APIs Sob Demanda'],
     value: 'Sua necessidade específica, nossa solução de IA dedicada.',
@@ -33,14 +33,14 @@ const products = [
 const upcoming = [
   {
     icon: Rocket,
-    title: 'Projetar (Em Breve)',
-    description: 'Uma plataforma playground para clientes testarem e criarem suas próprias APIs customizadas de análise/extração com deploy simplificado.',
+    title: 'Projetar (em breve)',
+    description: 'Uma plataforma playground para clientes testarem e criarem suas próprias APIs customizadas de análise e extração com deploy simplificado.',
     value: 'Autonomia e agilidade na criação de suas próprias soluções de IA.',
   },
   {
     icon: Eye, // Changed from BarChartBig to Eye for Visualizador
-    title: 'Visualizador (Em Breve)',
-    description: 'Dashboard online (Dataviz) personalizado para clientes que optarem pelo armazenamento dos KPIs gerados pela viewto.me.',
+    title: 'Visualizador (em breve)',
+    description: 'Dashboard online personalizado para clientes que optarem pelo armazenamento dos KPIs gerados pela viewto.me.',
     value: 'Visualize seus insights de forma clara e intuitiva, ideal para times sem BI dedicado.',
   },
 ];
@@ -49,7 +49,7 @@ export default function ProdutosPage() {
   return (
     <div className="container mx-auto px-4 md:px-6 lg:px-8 py-16 md:py-24">
       <div className="text-center mb-16">
-        <h1 className="text-4xl md:text-5xl font-outfit-semibold mb-4">Nossas Soluções de IA</h1>
+        <h1 className="text-4xl md:text-5xl font-outfit-semibold mb-4">Nossas soluções de IA</h1>
         <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
           Transformamos dados textuais desestruturados em inteligência acionável para impulsionar seu negócio.
         </p>
@@ -86,7 +86,7 @@ export default function ProdutosPage() {
       </div>
 
       <div className="text-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-outfit-semibold mb-4">Próximos Passos</h2>
+        <h2 className="text-3xl md:text-4xl font-outfit-semibold mb-4">Próximos passos</h2>
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
           Estamos constantemente inovando para trazer ainda mais valor aos nossos clientes.
         </p>
