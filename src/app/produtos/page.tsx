@@ -6,7 +6,7 @@ import Link from 'next/link';
 const products = [
   {
     icon: Cpu,
-    title: 'Interpretador',
+    title: 'Interpretar',
     description: 'Analisa conversas e textos (chats, emails, transcrições) para gerar KPIs de Qualidade, Controle e Vendas. Entenda o sentimento, a satisfação e os motivos por trás de cada interação.',
     apis: ['API Quality', 'API Control', 'API Sales'],
     value: 'Compreensão profunda das interações com clientes e colaboradores.',
@@ -14,7 +14,7 @@ const products = [
   },
   {
     icon: FileText,
-    title: 'Extrator',
+    title: 'Extrair',
     description: 'Extrai dados específicos de uma ampla variedade de documentos (RG, CNH, contratos, NFs, boletos, CVs, entre outros), incluindo documentos não identificados. Suporte para arquivos em texto, imagem e PDF.',
     apis: ['API Docs'],
     value: 'Automatize a coleta de informações de documentos de forma rápida e precisa.',
@@ -39,7 +39,7 @@ const upcoming = [
   },
   {
     icon: Eye, // Changed from BarChartBig to Eye for Visualizador
-    title: 'Visualizador (em breve)',
+    title: 'Visualizar (em breve)',
     description: 'Dashboard online personalizado para clientes que optarem pelo armazenamento dos KPIs gerados pela viewto.me.',
     value: 'Visualize seus insights de forma clara e intuitiva, ideal para times sem BI dedicado.',
   },

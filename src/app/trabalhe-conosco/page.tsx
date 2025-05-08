@@ -6,7 +6,7 @@ export default function TrabalheConoscoPage() {
   return (
     <div className="container mx-auto px-4 md:px-6 lg:px-8 py-16 md:py-24">
       <div className="max-w-3xl mx-auto text-center">
-        <h1 className="text-4xl md:text-5xl font-outfit-semibold mb-6">Faça Parte da Revolução dos Dados</h1>
+        <h1 className="text-4xl md:text-5xl font-outfit-semibold mb-6">Faça parte da revolução dos dados</h1>
         <p className="text-lg md:text-xl text-muted-foreground mb-12">
           Somos apaixonados por tecnologia, inovação e por descobrir insights "Além do Óbvio". Se você compartilha dessa paixão, queremos conhecer você!
         </p>
