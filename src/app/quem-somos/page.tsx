@@ -14,7 +14,7 @@ export default function QuemSomosPage() {
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-outfit-semibold mb-4">Nossa História</h1>
           <p className="text-lg md:text-xl text-muted-foreground">
-          Após mais de dois anos de desenvolvimento intenso, em março de 2025 lançamos nossa solução no mercado. A viewto.me nasceu da vontade de transformar a forma como as empresas acessam e interpretam dados desestruturados. Somos movidos pela missão de revelar insights relevantes que muitas vezes passam despercebidos. Com profundo domínio em Inteligência Artificial, trazemos a voz do cliente para dentro da empresa, ajudando líderes a tomarem decisões mais estratégicas, fundamentadas em dados difíceis de acessar por meios tradicionais.
+          Após mais de dois anos de desenvolvimento intenso, em março de 2025 lançamos nossa solução no mercado. A viewto.me nasceu da vontade de transformar a forma como as empresas acessam e interpretam dados desestruturados.
           </p>
         </div>
 
