@@ -67,7 +67,7 @@ export default function Home() {
          {/* AI Analyzer Section */}
         <section className="py-16 md:py-24 bg-background text-foreground">
           <div className="container mx-auto px-4 md:px-6">
-            <h2 className="text-3xl md:text-4xl font-outfit-regular text-center mb-4">Experimente Nossa IA</h2>
+            <h2 className="text-3xl md:text-4xl font-outfit-regular text-center mb-4">Experimente nossa IA</h2>
             <p className="text-center text-muted-foreground mb-12 max-w-xl mx-auto font-outfit-light">
               Cole um texto abaixo e veja como nossa IA extrai sentimento, satisfação e os problemas principais em segundos.
             </p>
@@ -81,11 +81,11 @@ export default function Home() {
           <div className="container mx-auto px-4 md:px-6">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-3xl md:text-4xl font-outfit-regular mb-4">O Desafio dos Dados Não Estruturados</h2>
+                <h2 className="text-3xl md:text-4xl font-outfit-regular mb-4">O desafio dos dados não estruturados</h2>
                 <p className="text-lg text-muted-foreground mb-6 font-outfit-light">
                   Empresas geram volumes massivos de texto em chats, e-mails, pesquisas e documentos. Analisar manualmente esses dados é lento, caro e sujeito a vieses, escondendo insights valiosos.
                 </p>
-                 <h3 className="text-xl font-outfit-regular mb-3">Fontes Comuns de Dados:</h3>
+                 <h3 className="text-xl font-outfit-regular mb-3">Fontes comuns de dados:</h3>
                  <ul className="space-y-2 font-outfit-light">
                     {dataSources.map((source) => (
                        <li key={source.name} className="flex items-center text-muted-foreground">
@@ -107,7 +107,7 @@ export default function Home() {
         {/* Key Benefits Section */}
         <section className="py-16 md:py-24 bg-background text-foreground">
           <div className="container mx-auto px-4 md:px-6">
-            <h2 className="text-3xl md:text-4xl font-outfit-regular text-center mb-12">Benefícios que Vão Além do Óbvio</h2>
+            <h2 className="text-3xl md:text-4xl font-outfit-regular text-center mb-12">Benefícios que vão além do óbvio</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
               {benefits.map((benefit) => (
                 <Card key={benefit.title} className="text-center bg-card border border-border shadow-sm hover:shadow-md transition-shadow duration-300">
@@ -129,7 +129,7 @@ export default function Home() {
         {/* CTA Section */}
         <section className="py-16 md:py-24 bg-secondary text-secondary-foreground">
           <div className="container mx-auto text-center px-4 md:px-6">
-            <h2 className="text-3xl md:text-4xl font-outfit-regular mb-6">Pronto para Descobrir o que seus Dados Escondem?</h2>
+            <h2 className="text-3xl md:text-4xl font-outfit-regular mb-6">Pronto para descobrir o que seus dados escondem?</h2>
             <p className="text-lg text-muted-foreground mb-8 max-w-xl mx-auto font-outfit-light">
               Comece a transformar suas interações em inteligência estratégica hoje mesmo.
             </p>

@@ -73,7 +73,7 @@ export default function TextAnalysisForm() {
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
       <Card className="bg-card border border-border/60 shadow-sm">
         <CardHeader>
-          <CardTitle className="font-outfit-medium">Analisador de Texto</CardTitle>
+          <CardTitle className="font-outfit-medium">Analisador de texto</CardTitle>
         </CardHeader>
         <CardContent>
           <Form {...form}>
@@ -83,7 +83,7 @@ export default function TextAnalysisForm() {
                 name="text"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Texto para Análise</FormLabel>
+                    <FormLabel>Texto para análise</FormLabel>
                     <FormControl>
                       <Textarea
                         placeholder="Ex: 'A entrega atrasou muito e o produto veio danificado. Péssima experiência!' ou 'Adorei o atendimento, super rápido e resolveu meu problema na hora!'"
@@ -113,7 +113,7 @@ export default function TextAnalysisForm() {
 
       <Card className="bg-secondary border border-border/40 shadow-sm min-h-[300px]">
          <CardHeader>
-            <CardTitle className="font-outfit-medium">Resultados da Análise</CardTitle>
+            <CardTitle className="font-outfit-medium">Resultados da análise</CardTitle>
          </CardHeader>
          <CardContent>
             {isLoading && (
@@ -145,12 +145,12 @@ export default function TextAnalysisForm() {
                  <div className="flex items-center justify-between p-3 bg-background rounded-md border">
                      <span className="font-outfit-medium flex items-center gap-2">
                         {getSatisfactionIcon(analysisResult.satisfactionLevel)}
-                        Nível de Satisfação:
+                        Nível de satisfação:
                     </span>
                     <Badge variant="outline" className="text-sm">{analysisResult.satisfactionLevel || 'N/A'}</Badge>
                  </div>
                  <div>
-                    <h4 className="font-outfit-medium mb-1">Problemas Identificados:</h4>
+                    <h4 className="font-outfit-medium mb-1">Problemas identificados:</h4>
                     <p className="text-muted-foreground bg-background p-3 rounded-md border">{analysisResult.underlyingIssues || 'Nenhum problema específico identificado.'}</p>
                  </div>
                  <div>
