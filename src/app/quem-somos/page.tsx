@@ -3,8 +3,8 @@ import { Quote } from 'lucide-react';
 
 // Replace with actual team data if available and desired
 const teamMembers = [
-  { name: "Nome Fundador 1", role: "CEO & Co-founder", image: "https://picsum.photos/100/100?random=1", initials: "F1", dataAiHint: "person portrait" },
-  { name: "Nome Fundador 2", role: "CTO & Co-founder", image: "https://picsum.photos/100/100?random=2", initials: "F2", dataAiHint: "person portrait" },
+  { name: "Lucas Schunck", role: "CEO & Co-founder", image: "https://storage.googleapis.com/publics-svg/lucasSchunck.jpeg", initials: "F1", dataAiHint: "person portrait" },
+  { name: "Thiago Dupin", role: "CTO & Co-founder", image: "https://storage.googleapis.com/publics-svg/thiagoDupin.jpeg", initials: "F2", dataAiHint: "person portrait" },
 ];
 
 export default function QuemSomosPage() {
