@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+const { fontFamily } = require("tailwindcss/defaultTheme") // Import default theme
 
 export default {
     darkMode: ["class"],
@@ -9,6 +10,16 @@ export default {
   ],
   theme: {
   	extend: {
+      fontFamily: {
+        // Add Outfit to the sans array, making it the default sans-serif font
+        'outfit-thin': ['Outfit', ...fontFamily.sans],
+        'outfit-light': ['Outfit', ...fontFamily.sans],
+        'outfit-regular': ['Outfit', ...fontFamily.sans],
+        'outfit-medium': ['Outfit', ...fontFamily.sans],
+        'outfit-semibold': ['Outfit', ...fontFamily.sans],
+        // Keep the variable for explicit usage if needed
+        sans: ["var(--font-outfit)", ...fontFamily.sans],
+      },
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
@@ -90,5 +101,5 @@ export default {
   		}
   	}
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"), require('@tailwindcss/typography')], // Add typography plugin
 } satisfies Config;

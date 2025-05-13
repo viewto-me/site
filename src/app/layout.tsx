@@ -1,21 +1,24 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
+import { Outfit } from 'next/font/google';
 import './globals.css';
-import { Toaster } from '@/components/ui/toaster';
+import { cn } from "@/lib/utils";
+import Header from '@/components/layout/header';
+import Footer from '@/components/layout/footer';
+import { Toaster } from "@/components/ui/toaster";
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
+const outfit = Outfit({
   subsets: ['latin'],
-});
-
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
+  variable: '--font-outfit',
+  weight: ['100', '300', '400'], // Only Thin, Light, Regular
+  display: 'swap',
 });
 
 export const metadata: Metadata = {
-  title: 'Blank Slate',
-  description: 'A clean, blank slate application.',
+  title: 'viewto.me',
+  description: 'Análise e extração de dados de textos desestruturados com IA. Insights Além do Óbvio para empresas customer-centric.',
+  icons: {
+    icon: 'https://storage.googleapis.com/publics-svg/favicon32px.svg',
+  },
 };
 
 export default function RootLayout({
@@ -24,11 +27,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="h-full">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col bg-background text-foreground`}
-      >
-        {children}
+    <html lang="pt-BR" className={cn(outfit.variable, "antialiased")}>
+      <body className={cn(
+        "min-h-screen bg-background text-foreground flex flex-col"
+      )}>
+        <Header />
+        <main className="flex-grow">{children}</main>
+        <Footer />
         <Toaster />
       </body>
     </html>
