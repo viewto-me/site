@@ -48,7 +48,7 @@ export default function QuemSomosPage() {
           <h2 className="text-3xl font-outfit-semibold mb-8 text-center">Equipe</h2>
           <div className="space-y-12">
             {teamMembers.map((member) => (
-              <div key={member.name} className="md:flex md:items-start md:gap-8">
+              <div key={member.name} className="md:flex md:items-center md:gap-8">
                 <div className="flex-shrink-0 text-center md:text-left mb-4 md:mb-0">
                     <Avatar className="w-32 h-32 mx-auto md:mx-0 mb-2">
                     <AvatarImage src={member.image} alt={member.name} data-ai-hint={member.dataAiHint}/>
@@ -57,7 +57,7 @@ export default function QuemSomosPage() {
                     <h4 className="font-outfit-medium text-xl">{member.name}</h4>
                     <p className="text-muted-foreground text-md">{member.role}</p>
                 </div>
-                <div className="text-muted-foreground text-md md:mt-1">
+                <div className="text-muted-foreground text-md">
                     <p>{member.description}</p>
                 </div>
               </div>
