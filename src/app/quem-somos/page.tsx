@@ -3,8 +3,8 @@ import { Quote } from 'lucide-react';
 
 // Replace with actual team data if available and desired
 const teamMembers = [
-  { name: "Lucas Schunck", role: "CEO & Co-founder", image: "https://storage.googleapis.com/publics-svg/lucasSchunck.jpeg", initials: "F1", dataAiHint: "person portrait" },
-  { name: "Thiago Dupin", role: "CTO & Co-founder", image: "https://storage.googleapis.com/publics-svg/thiagoDupin.jpeg", initials: "F2", dataAiHint: "person portrait" },
+  { name: "Lucas Schunck", role: "CEO & Co-founder", image: "https://storage.googleapis.com/publics-svg/lucasSchunck.jpeg", initials: "LS", dataAiHint: "person portrait", description: "Engenheiro civil com mais de 13 anos de experiência em relacionamento e inovação tecnológica. Atuou por cerca de 8 anos na Campus Party, um dos maiores eventos de tecnologia do mundo, o que o manteve sempre próximo das tendências e avanços do setor. Foi também um dos principais responsáveis pelas automações e pela transformação digital da Fintech Avenue, adquirida posteriormente pelo Itaú. Sua visão estratégica e foco em eficiência operacional foram fundamentais para o crescimento exponencial da empresa." },
+  { name: "Thiago Dupin", role: "CTO & Co-founder", image: "https://storage.googleapis.com/publics-svg/thiagoDupin.jpeg", initials: "TD", dataAiHint: "person portrait", description: "Engenheiro de Software com mais de 10 anos de experiência em desenvolvimento e arquitetura de soluções. Possui MBA em Arquitetura de Soluções e passagem por empresas de destaque como Accenture e Santander, onde atuou por mais de 8 anos. É também colaborador ativo no projeto open source do Visual Studio Code, reforçando seu compromisso com a excelência técnica e a inovação contínua." },
 ];
 
 export default function QuemSomosPage() {
@@ -46,15 +46,20 @@ export default function QuemSomosPage() {
 
         <div className="mb-12">
           <h2 className="text-3xl font-outfit-semibold mb-8 text-center">Equipe</h2>
-          <div className="flex flex-wrap justify-center gap-8">
+          <div className="space-y-12">
             {teamMembers.map((member) => (
-              <div key={member.name} className="text-center">
-                <Avatar className="w-24 h-24 mx-auto mb-2">
-                  <AvatarImage src={member.image} alt={member.name} data-ai-hint={member.dataAiHint}/>
-                  <AvatarFallback className="text-2xl">{member.initials}</AvatarFallback>
-                </Avatar>
-                <h4 className="font-outfit-medium text-lg">{member.name}</h4>
-                <p className="text-muted-foreground text-sm">{member.role}</p>
+              <div key={member.name} className="md:flex md:items-start md:gap-8">
+                <div className="flex-shrink-0 text-center md:text-left mb-4 md:mb-0">
+                    <Avatar className="w-32 h-32 mx-auto md:mx-0 mb-2">
+                    <AvatarImage src={member.image} alt={member.name} data-ai-hint={member.dataAiHint}/>
+                    <AvatarFallback className="text-3xl">{member.initials}</AvatarFallback>
+                    </Avatar>
+                    <h4 className="font-outfit-medium text-xl">{member.name}</h4>
+                    <p className="text-muted-foreground text-md">{member.role}</p>
+                </div>
+                <div className="text-muted-foreground text-md md:mt-1">
+                    <p>{member.description}</p>
+                </div>
               </div>
             ))}
           </div>
