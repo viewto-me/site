@@ -60,26 +60,26 @@ function HeroContent() {
 
       <div className="w-full lg:w-1/2 pr-0 lg:pr-8 mb-8 lg:mb-0">
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 leading-tight tracking-wide">
-          We're Building<br />Cool Experiences
+          você conhece<br />seus dados?
         </h1>
         <div className="text-sm text-gray-300 opacity-90 mt-4">
-          AI \ WEB3 \ UI \ 3D \ MOTION
+          nós conhecemos eles pra você e pra sua empresa.
         </div>
       </div>
 
       <div className="w-full lg:w-1/2 pl-0 lg:pl-8 flex flex-col items-start">
          <p className="text-base sm:text-lg opacity-80 mb-6 max-w-md">
-           Crafting Awesome Stories and Killer Designs to Make Brand Stand Out
+         Descubra como seus dados revelam o caminho para se tornar uma empresa realmente customer centric
         </p>
         <div className="flex pointer-events-auto flex-col sm:flex-row items-start space-y-3 sm:space-y-0 sm:space-x-3">
              <button className="border border-white text-white font-semibold py-2.5 sm:py-3.5 px-6 sm:px-8 rounded-2xl transition duration-300 w-full sm:w-auto hover:bg-white hover:text-black">
-                Contact Us
+                Explorar Soluções
             </button>
             <button className="pointer-events-auto bg-white text-black font-semibold py-2.5 sm:py-3.5 px-6 sm:px-8 rounded-2xl transition duration-300 hover:scale-105 flex items-center justify-center w-full sm:w-auto">
                <svg className="w-4 h-4 sm:w-5 sm:h-5 mr-2 text-cyan-400" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                    <path d="M12 4C11.4477 4 11 4.44772 11 5V11H5C4.44772 11 4 11.4477 4 12C4 12.5523 4.44772 13 5 13H11V19C11 19.5523 11.4477 20 12 20C12.5523 20 13 19.5523 13 19V13H19C19.5523 13 20 12.5523 20 12C20 11.4477 19.5523 11 19 11H13V5C13 4.44772 12.5523 4 12 4Z" fill="currentColor" />
                </svg>
-               Get Started
+               Fale Conosco
             </button>
         </div>
       </div>
@@ -157,14 +157,6 @@ const HeroSection = () => {
           display: 'flex', justifyContent: 'center', alignItems: 'center', zIndex: 10, pointerEvents: 'none'
         }}>
           <HeroContent />
-        </div>
-      </div>
-
-      <div className="bg-black relative z-10" style={{ marginTop: '-10vh' }}>
-        <ScreenshotSection screenshotRef={screenshotRef} />
-        <div className="container mx-auto px-4 py-16 text-white">
-            <h2 className="text-4xl font-bold text-center mb-8">Other Content Below</h2>
-             <p className="text-center max-w-xl mx-auto opacity-80">This is where additional sections of your landing page would go.</p>
         </div>
       </div>
     </div>

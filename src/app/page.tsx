@@ -49,27 +49,8 @@ export function HomePage() {
     <div>
       <HeroSection />
 
-      {/* Hero Section */}
-      <section className="relative py-24 md:py-32 lg:py-40 bg-black text-white text-center overflow-hidden">
-         <div className="absolute inset-0 bg-gradient-to-b from-black via-gray-900 to-black opacity-80 z-0"></div>
-         <div className="container mx-auto relative z-10 px-4 md:px-6">
-          <DynamicTaglines />
-          <p className="mt-6 max-w-2xl mx-auto text-lg md:text-xl font-outfit-light text-gray-300">
-            Analisamos e categorizamos conversas desestruturadas, transformando interações humanas e diálogos de IA em KPIs estratégicos. Descubra insights profundos e tome decisões mais inteligentes.
-          </p>
-          <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4">
-            <Button size="lg" asChild className="bg-primary hover:bg-primary/90 text-primary-foreground font-outfit-regular">
-              <Link href="/produtos">Explorar Soluções <ArrowRight className="ml-2 h-5 w-5" /></Link>
-            </Button>
-            <Button size="lg" variant="outline" asChild className="border-primary text-primary hover:bg-primary/10 hover:text-primary font-outfit-regular">
-              <Link href="/contato">Fale Conosco</Link>
-            </Button>
-          </div>
-        </div>
-      </section>
-
-       {/* AI Analyzer Section */}
-      <section className="py-16 md:py-24 bg-background text-foreground">
+      {/* AI Analyzer Section */}
+      <section className="py-16 md:py-24 bg-background text-foreground" style={{ background: 'linear-gradient(to bottom, #000 0%, #fff 100%)' }}>
         <div className="container mx-auto px-4 md:px-6">
           <h2 className="text-3xl md:text-4xl font-outfit-regular text-center mb-4">Experimente nossa IA</h2>
           <p className="text-center text-muted-foreground mb-12 max-w-xl mx-auto font-outfit-light">
@@ -78,7 +59,6 @@ export function HomePage() {
           <TextAnalysisForm />
         </div>
       </section>
-
 
       {/* Problem/Solution Section */}
       <section className="py-16 md:py-24 bg-secondary text-secondary-foreground">
